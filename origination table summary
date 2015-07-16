@@ -1,0 +1,37 @@
+
+##create table result2001 data directory = 'H:/mysql' as (select if(perform_2001.z_bal = 3,1,0) as result, origin.score as score, 
+##origin.dti as dti, origin.ltv as ltv,origin.i_rate as i_rate from perform_2001 left join origin on perform_2001.loan_seq_no = origin.loan_seq_no
+##where origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by perform_2001.loan_seq_no);
+drop table nondef2001;
+create table nondef2001 data directory = 'H:/mysql' as (select perform_2001.m_period, count(perform_2001.z_bal != 3) as n_default, avg(origin.score )as score, 
+avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2001 left join origin on perform_2001.loan_seq_no = origin.loan_seq_no
+where perform_2001.z_bal != 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2001.m_period,4));
+
+
+create table nondef2005 data directory = 'H:/mysql' as (select perform_2005.m_period, count(perform_2005.z_bal != 3) as n_default,avg(origin.score)as score,  avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2005 left join origin on perform_2005.loan_seq_no = origin.loan_seq_no
+where perform_2005.z_bal != 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2005.m_period,4));
+
+
+create table nondef2006 data directory = 'H:/mysql' as (select perform_2006.m_period, count(perform_2006.z_bal != 3) as n_default, avg(origin.score )as score, 
+avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2006 left join origin on perform_2006.loan_seq_no = origin.loan_seq_no
+where perform_2006.z_bal != 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2006.m_period,4));
+
+
+create table nondef2007 data directory = 'H:/mysql' as (select perform_2007.m_period, count(perform_2007.z_bal != 3) as n_default, avg(origin.score )as score, 
+avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2007 left join origin on perform_2007.loan_seq_no = origin.loan_seq_no
+where perform_2007.z_bal != 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2007.m_period,4));
+
+select * from nondef2001; union select * from nondef2000 union select * from nondef2002 union select * from nondef2003 union select * from nondef2001 union select * from nondef2001 union select * from nondef2001 union select * from nondef2001 union ;
+##create table nondef2003 data directory = 'H:/mysql' as (select perform_2003.m_period, count(perform_2003.z_bal != 3) as n_default, avg(origin.score )as score, 
+##avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2003 left join origin on perform_2003.loan_seq_no = origin.loan_seq_no
+##where perform_2003.z_bal != 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2003.m_period,4));
+select avg(score), avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >600 and score <= 650; 
+select avg(score), avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >500 and score <= 550; 
+select avg(score), avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >450 and score <= 500; 
+select avg(score), avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >450 and score <= 500; 
+select avg(score), avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >400 and score <= 450; 
+select avg(score), avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >350 and score <= 400; 
+select avg(score), avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >300 and score <= 350; 
+
+select left(loan_seq_no,4),  avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >650 and score <=700 group by left(loan_seq_no ,4) ; 
+select avg(score), avg(i_rate) as i_rate, avg(dti) as dti, avg(ltv) as ltv from origin where score >800 group by left(loan_seq_no ,4); 
