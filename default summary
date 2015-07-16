@@ -1,0 +1,23 @@
+
+create table sum1999 data directory = 'H:/mysql' as (select perform_1999.m_period, count(perform_1999.z_bal = 3) as n_default, avg(origin.score )as score, 
+avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_1999 left join origin on perform_1999.loan_seq_no = origin.loan_seq_no
+where perform_1999.z_bal = 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_1999.m_period,4));
+
+
+create table sum2000 data directory = 'H:/mysql' as (select perform_2000.m_period, count(perform_2000.z_bal = 3) as n_default,avg(origin.score)as score,  avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2000 left join origin on perform_2000.loan_seq_no = origin.loan_seq_no
+where perform_2000.z_bal = 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2000.m_period,4));
+
+
+create table sum2001 data directory = 'H:/mysql' as (select perform_2001.m_period, count(perform_2001.z_bal = 3) as n_default, avg(origin.score )as score, 
+avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2001 left join origin on perform_2001.loan_seq_no = origin.loan_seq_no
+where perform_2001.z_bal = 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2001.m_period,4));
+
+
+create table sum2002 data directory = 'H:/mysql' as (select perform_2002.m_period, count(perform_2002.z_bal = 3) as n_default, avg(origin.score )as score, 
+avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2002 left join origin on perform_2002.loan_seq_no = origin.loan_seq_no
+where perform_2002.z_bal = 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2002.m_period,4));
+
+select * from sum2003;
+create table sum2003 data directory = 'H:/mysql' as (select perform_2003.m_period, count(perform_2003.z_bal = 3) as n_default, avg(origin.score )as score, 
+avg(origin.dti) as dti, avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2003 left join origin on perform_2003.loan_seq_no = origin.loan_seq_no
+where perform_2003.z_bal = 3 and origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by left(perform_2003.m_period,4));
