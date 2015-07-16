@@ -1,0 +1,28 @@
+###create default model table dataset 2002
+create table result2002 data directory = 'H:/mysql' as (select max(if(perform_2002.z_bal = 3,1,0)) as result, avg(origin.score) as score, 
+avg(origin.dti) as dti,avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2002 left join origin on perform_2002.loan_seq_no = origin.loan_seq_no
+where score is not null and dti is not null and ltv is not null and perform_2002.i_rate is not null group by perform_2002.loan_seq_no);
+show tables;
+use credit;
+show tables;
+show tables;
+select result from resultloan2002 where result = 1;
+####create result tables with loan age
+
+create table resultl_age2002 data directory = 'H:/mysql' as (select if(perform_2002.z_bal = 3,1,0) as result, perform_2002.loan_seq_no, origin.score as score, 
+origin.dti as dti, origin.ltv as ltv, origin.i_rate as i_rate, perform_2002.l_age from perform_2002 left join origin on perform_2002.loan_seq_no = origin.loan_seq_no);
+
+
+###create table loanage200206 data directory = 'H:/mysql' as (select max(result) as result, avg(score) as score, avg(dti) as dti,avg(ltv) as ltv, avg(i_rate) as i_rate from resultloan2002 left join origin where perform_2002.l_age <=6 and score is not null and dti is not null and ltv is not null and perform_2002.i_rate is not null group by perform_2002.loan_seq_no);
+#show tables;
+
+
+
+
+select * from result2002 where dti = 'null' limit 1,100; 
+use credit;
+show tables;
+drop table result2002;
+
+select count(result) from result2002 where result = 0;
+select loan_seq_no from perform_2002 group by loan_seq_no limit 1,10;
