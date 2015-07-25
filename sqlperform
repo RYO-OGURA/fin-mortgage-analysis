@@ -1,0 +1,1939 @@
+
+CREATE TABLE perform_1999
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+
+/* perform data load */
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ11999.txt'
+IGNORE
+    INTO TABLE perform_1999
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ21999.txt'
+IGNORE
+    INTO TABLE perform_1999
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ31999.txt'
+IGNORE
+    INTO TABLE perform_1999
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ41999.txt'
+IGNORE
+    INTO TABLE perform_1999
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2000
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12000.txt'
+IGNORE
+    INTO TABLE perform_2000
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22000.txt'
+IGNORE
+    INTO TABLE perform_2000
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32000.txt'
+IGNORE
+    INTO TABLE perform_2000
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42000.txt'
+IGNORE
+    INTO TABLE perform_2000
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2001
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12001.txt'
+IGNORE
+    INTO TABLE perform_2001
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22001.txt'
+IGNORE
+    INTO TABLE perform_2001
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32001.txt'
+IGNORE
+    INTO TABLE perform_2001
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42001.txt'
+IGNORE
+    INTO TABLE perform_2001
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2002
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12002.txt'
+IGNORE
+    INTO TABLE perform_2002
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22002.txt'
+IGNORE
+    INTO TABLE perform_2002
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32002.txt'
+IGNORE
+    INTO TABLE perform_2002
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42002.txt'
+IGNORE
+    INTO TABLE perform_2002
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2003
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12003.txt'
+IGNORE
+    INTO TABLE perform_2003
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22003_1.txt'
+IGNORE
+    INTO TABLE perform_2003
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22003_2.txt'
+IGNORE
+    INTO TABLE perform_2003
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32003_1.txt'
+IGNORE
+    INTO TABLE perform_2003
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32003_2.txt'
+IGNORE
+    INTO TABLE perform_2003
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42003.txt'
+IGNORE
+    INTO TABLE perform_2003
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2004
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12004.txt'
+IGNORE
+    INTO TABLE perform_2004
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22004.txt'
+IGNORE
+    INTO TABLE perform_2004
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32004.txt'
+IGNORE
+    INTO TABLE perform_2004
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42004.txt'
+IGNORE
+    INTO TABLE perform_2004
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2005
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12005.txt'
+IGNORE
+    INTO TABLE perform_2005
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22005.txt'
+IGNORE
+    INTO TABLE perform_2005
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32005.txt'
+IGNORE
+    INTO TABLE perform_2005
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42005.txt'
+IGNORE
+    INTO TABLE perform_2005
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2006
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12006.txt'
+IGNORE
+    INTO TABLE perform_2006
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22006.txt'
+IGNORE
+    INTO TABLE perform_2006
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32006.txt'
+IGNORE
+    INTO TABLE perform_2006
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42006.txt'
+IGNORE
+    INTO TABLE perform_2006
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2007
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12007.txt'
+IGNORE
+    INTO TABLE perform_2007
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22007.txt'
+IGNORE
+    INTO TABLE perform_2007
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32007.txt'
+IGNORE
+    INTO TABLE perform_2007
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42007.txt'
+IGNORE
+    INTO TABLE perform_2007
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2008
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12008.txt'
+IGNORE
+    INTO TABLE perform_2008
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22008.txt'
+IGNORE
+    INTO TABLE perform_2008
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32008.txt'
+IGNORE
+    INTO TABLE perform_2008
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42008.txt'
+IGNORE
+    INTO TABLE perform_2008
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2009
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12009.txt'
+IGNORE
+    INTO TABLE perform_2009
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22009.txt'
+IGNORE
+    INTO TABLE perform_2009
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32009.txt'
+IGNORE
+    INTO TABLE perform_2009
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42009.txt'
+IGNORE
+    INTO TABLE perform_2009
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2010
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12010.txt'
+IGNORE
+    INTO TABLE perform_2010
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22010.txt'
+IGNORE
+    INTO TABLE perform_2010
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32010.txt'
+IGNORE
+    INTO TABLE perform_2010
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42010.txt'
+IGNORE
+    INTO TABLE perform_2010
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2011
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12011.txt'
+IGNORE
+    INTO TABLE perform_2011
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22011.txt'
+IGNORE
+    INTO TABLE perform_2011
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32011.txt'
+IGNORE
+    INTO TABLE perform_2011
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42011.txt'
+IGNORE
+    INTO TABLE perform_2011
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2012
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12012.txt'
+IGNORE
+    INTO TABLE perform_2012
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22012.txt'
+IGNORE
+    INTO TABLE perform_2012
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ32012.txt'
+IGNORE
+    INTO TABLE perform_2012
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ42012.txt'
+IGNORE
+    INTO TABLE perform_2012
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+    CREATE TABLE perform_2013
+(
+	loan_seq_no char(12),
+    m_period char(6),
+    actual_upb decimal(14,2),
+    dlq_status char(3),
+    l_age int(3),
+    rem_mth int(3),
+    repur char(1),
+    mdfied char(1),
+    z_bal int(2),
+    zerodate char(6),
+    i_rate decimal(6,3),
+    deferred_upb int(12),
+    ddlpi char(6),
+    mi_recover int(12),
+    sales_proceeds varchar(14),
+    non_mi_recoversies int(12),
+    expenses int(12)
+)DATA directory = 'H:/mysql';
+
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ12013.txt'
+IGNORE
+    INTO TABLE perform_2013
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
+LOAD DATA CONCURRENT LOCAL INFILE 'C:/rawdata/performQ22013.txt'
+    IGNORE
+    INTO TABLE perform_2013
+    CHARACTER SET default
+    FIELDS
+        TERMINATED BY '|'
+    LINES
+        STARTING BY ''
+        TERMINATED BY '\n'
+	(	loan_seq_no,
+    m_period,
+    actual_upb,
+    dlq_status,
+    l_age,
+    rem_mth,
+    repur,
+    mdfied,
+    z_bal,
+    zerodate,
+    i_rate,
+    deferred_upb,
+    ddlpi,
+    mi_recover,
+    sales_proceeds,
+    non_mi_recoversies,
+    expenses);
+    
