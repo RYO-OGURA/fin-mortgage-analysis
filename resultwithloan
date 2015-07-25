@@ -1,0 +1,18 @@
+create table resultl_age2001 data directory = 'H:/mysql' as (select if(perform_2001.z_bal = 3,1,0) as result, perform_2001.loan_seq_no, origin.score as score, 
+origin.dti as dti, origin.ltv as ltv, origin.i_rate as i_rate, perform_2001.l_age from perform_2001 left join origin on perform_2001.loan_seq_no = origin.loan_seq_no);
+
+create table resultl_age2000 data directory = 'H:/mysql' as (select if(perform_2000.z_bal = 3,1,0) as result, perform_2000.loan_seq_no, origin.score as score, 
+origin.dti as dti, origin.ltv as ltv, origin.i_rate as i_rate, perform_2000.l_age from perform_2000 left join origin on perform_2000.loan_seq_no = origin.loan_seq_no);
+
+create table resultl_age1999 data directory = 'H:/mysql' as (select if(perform_1999.z_bal = 3,1,0) as result, perform_1999.loan_seq_no, origin.score as score, 
+origin.dti as dti, origin.ltv as ltv, origin.i_rate as i_rate, perform_1999.l_age from perform_1999 left join origin on perform_1999.loan_seq_no = origin.loan_seq_no);
+show tables;
+
+select count(score) from origin group by left(loan_seq_no, 4);
+select * from sum2003 union select * from sum2002
+union select * from sum2001
+union select * from sum2000
+union select * from sum1999 group by m_period;
+select * from sum2007;
+
+select sum(sum1999.n_default), sum(sum2000.n_default), sum(sum2001.n_default), sum(sum2002.n_default), sum(sum2003.n_default), sum(sum2004.n_default),sum(sum2005.n_default),sum(sum2006.n_default),sum(sum2007.n_default) from sum1999, sum2000, sum2001, sum2002,sum2003,sum2004,sum2005,sum2006,sum2007;
