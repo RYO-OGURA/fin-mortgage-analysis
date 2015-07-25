@@ -1,0 +1,41 @@
+
+
+use credit;
+select loan_seq_no from origin group by ;
+
+select left(loan_seq_no,6), avg(score) as score, avg(i_rate) as i_rate, avg(dti) as dti,
+avg(ltv) as ltv from origin where score between 700 and 750 group by left(loan_seq_no,6) limit 10;
+
+select left(loan_seq_no,6) from origin group by left(loan_seq_no,6) limit 20;
+
+###bad perform_1999.loan_seq_no,
+select if(perform_1999.z_bal = 3,1,0) as result, truncate(avg(origin.score),2) as score, 
+truncate(avg(origin.dti),2) as dti, truncate(avg(origin.ltv),2) as ltv,
+truncate(avg(origin.i_rate),3) as i_rate from perform_1999 left join origin on perform_1999.loan_seq_no = origin.loan_seq_no
+where left(origin.loan_seq_no,4) = 'F199' or left(origin.loan_seq_no,4) ='F100' or left(origin.loan_seq_no,4)='F101' or 
+left(origin.loan_seq_no,4) ='F102' or left(origin.loan_seq_no,4) ='F103' 
+and score is not null and dti is not null and ltv is not null and perform_1999.i_rate is not null group by perform_1999.loan_seq_no;
+
+use credit;
+create table results DATA directory = 'H:/mysql' as (select if(perform_2000.z_bal= 3,1,0) as result, origin.score as score, origin.dti as dit, origin.ltv as ltv,
+origin.i_rate as i_rate from perform_2000 left join origin on perform_2000.loan_seq_no = origin.loan_seq_no;
+where score is not null and dti is not null and ltv is not null) ;
+
+
+
+###create default model table dataset 2000
+create table result2 data directory = 'H:/mysql' as (select if(perform_2000.z_bal = 3,1,0) as result, avg(origin.score) as score, 
+avg(origin.dti) as dti,avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2000 left join origin on perform_2000.loan_seq_no = origin.loan_seq_no
+where origin.score is not null and origin.dti is not null and origin.ltv is not null and origin.i_rate is not null group by perform_2000.loan_seq_no);
+
+
+#########create a csv file
+
+select if(perform_2000.z_bal = 3,1,0) as result, avg(origin.score) as score, 
+avg(origin.dti) as dti,avg(origin.ltv) as ltv, avg(origin.i_rate) as i_rate from perform_2000 left join origin on perform_2000.loan_seq_no = origin.loan_seq_no
+where score is not null and dti is not null and ltv is not null and perform_2000.i_rate is not null group by perform_2000.loan_seq_no
+ into outfile 'H:/datacsv/result2000.csv'
+FIELDS TERMINATED BY ','
+ENCLOSED BY ''
+LINES TERMINATED BY '\n';
+
